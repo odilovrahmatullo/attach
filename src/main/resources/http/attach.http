@@ -1,0 +1,22 @@
+### UPLOAD ATTACH TO SERVICE  video - 39526a43-cb60-43fb-94dd-1aee27dfac74.mp4  photo - b4591845-1272-461d-be03-61487a33726d.jpg
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="img.jpg"
+
+< C:\Users\HP\Downloads\Telegram Desktop\img.jpg
+
+
+### OPEN ATTACH
+GET http://localhost:8080/attach/open/9f48d321-ee47-4862-a939-c56941a0b19b.jpg
+
+### GET ALL ATTACHES
+GET  http://localhost:8080/attach/all?page=1&size=5
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiUk9MRV9BRE1JTiIsInN1YiI6ImFkbWluQGdtYWlsLmNvbSIsImlhdCI6MTczMjUzMDM2NiwiZXhwIjoxNzMyNjE2NzY2fQ.tuizvB0QkMebU0bKi7HtXgaB7NYAss-qSUZiwPiSzsw
+
+
+### DOWNLOAD ATTACHES
+GET http://localhost:8080/attach/download/9f48d321-ee47-4862-a939-c56941a0b19b.jpg
+
+
